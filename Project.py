@@ -30,7 +30,7 @@ with col2:
      usage_hrs=fdf['Daily_Usage_Hours'].sum()
      st.metric('Total Usage Hours Daily📈',f'{usage_hrs:.2f} Hrs')
 with col3:
-     avg_hrs=fdf['Daily_Usage_Hours'].mean()4
+     avg_hrs=fdf['Daily_Usage_Hours'].mean()
      st.metric('Average Usage Hours Daily📉',f'{avg_hrs:.2f} Hrs')
 with col4:
      trust=fdf['Trust_in_AI_Tools'].mean()
@@ -68,4 +68,5 @@ with tab4:
      fig_5=px.pie(fdf,names='Preferred_AI_Tool',hole=0.4,title='AI Tool used by Students')
      st.plotly_chart(fig_5)
      fig_6=px.pie(fdf,names='Willing_to_Pay_for_Access',hole=0.4,title='Students Willing to Pay for Access')
+
      st.plotly_chart(fig_6)
