@@ -2,3 +2,4 @@ streamlit
 pandas
 option_menu
 plotly.express
+Counter
