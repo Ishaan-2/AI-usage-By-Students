@@ -1,5 +1,5 @@
-streamlit== 1.36.0
-pandas==2.1.4
-plotly==5.22.0
-plotly-express==0.4.1
-streamlit-option-menu==0.3.12
+streamlit
+pandas
+plotly
+plotly-express
+streamlit-option-menu
