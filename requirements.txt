@@ -3,4 +3,3 @@ pandas==2.1.4
 plotly==5.22.0
 plotly-express==0.4.1
 streamlit-option-menu==0.3.12
-path
