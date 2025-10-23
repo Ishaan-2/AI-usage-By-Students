@@ -3,6 +3,8 @@ import pandas as pd
 from collections import Counter
 from streamlit_option_menu import option_menu
 import plotly.express as px
+import warnings
+warnings.filterwarnings("ignore")
 
 #uploading files
 df = pd.read_csv('Cleaned.csv')
@@ -71,5 +73,6 @@ with tab4:
      fig_6=px.pie(fdf,names='Willing_to_Pay_for_Access',hole=0.4,title='Students Willing to Pay for Access')
 
      st.plotly_chart(fig_6)
+
 
 
