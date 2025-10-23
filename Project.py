@@ -7,7 +7,11 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #uploading files
-df = pd.read_csv('Cleaned.csv')
+def load_data():
+    data = pd.read_csv('Cleaned.csv')
+    return data
+    
+df=load_data()
 st.set_page_config(page_title='AI Usage')
 st.title('AI USAGE BY STUDENTS :streamlit:')
 
@@ -73,6 +77,7 @@ with tab4:
      fig_6=px.pie(fdf,names='Willing_to_Pay_for_Access',hole=0.4,title='Students Willing to Pay for Access')
 
      st.plotly_chart(fig_6)
+
 
 
 
